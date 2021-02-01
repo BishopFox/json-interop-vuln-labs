@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+  mysql:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: bb3cf293a43066428577ac02926cefd0
+  user:
+    build: user/
+    ports:
+      - "5002:5000"
+    depends_on:
+      - "mysql"
+  permissions:
+    build: permissions/
+    ports:
+      - "5003:5000"
+    depends_on:
+      - "user"
+      - "mysql"
+  admin:
+    build: admin/
+    ports:
+      - "5004:5000"

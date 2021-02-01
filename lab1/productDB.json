@@ -1,0 +1,12 @@
+[
+    {"name": "Product A", "price": 100},
+    {"name": "Product B", "price": 200},
+    {"name": "Product C", "price": 300},
+    {"name": "Product D", "price": 400},
+    {"name": "Product E", "price": 500},
+    {"name": "Product F", "price": 600},
+    {"name": "Product G", "price": 700},
+    {"name": "Product H", "price": 800},
+    {"name": "$100 E-Gift Card", "price": 100},
+    {"name": "Product J", "price": 1000}
+]

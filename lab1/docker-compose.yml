@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  cart:
+    build: cart/
+    ports:
+      - "5000:5000"
+    volumes:
+        - ./productDB.json:/code/productDB.json
+  payments:
+    build: payments/
+    ports:
+      - "5001:8000"
+    volumes:
+        - ./productDB.json:/go/src/app/productDB.json
+

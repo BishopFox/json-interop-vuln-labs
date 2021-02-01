@@ -1,0 +1,4 @@
+flask
+jsonschema
+requests
+mysql-connector-python
